@@ -60,42 +60,42 @@ function App() {
               {product(
                 "Maybelline Eye Liner",
                 "$5.00",
-                "http://localhost:3001/p1"
+                "https://nw-demo-app-2.herokuapp.com/p1"
               )}
             </div>
             <div>
               {product(
                 "Estee Lauder Mascara",
                 "$6.00",
-                "http://localhost:3001/p2"
+                "https://nw-demo-app-2.herokuapp.com/p2"
               )}
             </div>
             <div>
               {product(
                 "Maybelline Lipstick",
                 "$5.99",
-                "http://localhost:3001/p3"
+                "https://nw-demo-app-2.herokuapp.com/p3"
               )}
             </div>
             <div>
               {product(
                 "Maybelline Sun Screen Lotion",
                 "$10.00",
-                "http://localhost:3001/p4"
+                "https://nw-demo-app-2.herokuapp.com/p4"
               )}
             </div>
             <div>
               {product(
                 "Estee Lauder Moisturizer",
                 "$9.00",
-                "http://localhost:3001/p5"
+                "https://nw-demo-app-2.herokuapp.com/p5"
               )}
             </div>
             <div>
               {product(
                 "Estee Lauder Eye Shadow",
                 "$8.00",
-                "http://localhost:3001/p6"
+                "https://nw-demo-app-2.herokuapp.com/p6"
               )}
             </div>
           </Carousel>
