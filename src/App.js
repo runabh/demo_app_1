@@ -41,13 +41,16 @@ function App() {
       >
         <div>{name}</div>
         <div>{price}</div>
-        <Button
+        {/* <Button
           onClick={() => {
             window.open(link, "_blank");
           }}
         >
           Add to Cart
-        </Button>
+        </Button> */}
+        <a href={link} target="nowwith">
+          Add to Cart
+        </a>
       </div>
     );
   };
