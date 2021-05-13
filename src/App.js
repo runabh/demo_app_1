@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Carousel, Button } from "antd";
+import OverlayVideo from "./OverlayVideo";
 
 function App() {
   const onChange = (a, b, c) => {
@@ -41,21 +42,25 @@ function App() {
       >
         <div>{name}</div>
         <div>{price}</div>
-        <Button
+        {/* <Button
           onClick={() => {
             window.open(link, "_blank");
           }}
         >
           Add to Cart
-        </Button>
+        </Button> */}
+        <a href={link} target="nowwith">
+          Add to Cart
+        </a>
       </div>
     );
   };
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{ maxWidth: "80vw" }}>
-          <Carousel afterChange={onChange} {...settings}>
+        <div style={{ maxWidth: "80vw", margin: "auto" }}>
+          <OverlayVideo />
+          {/* <Carousel afterChange={onChange} {...settings}>
             <div>
               {product(
                 "Maybelline Eye Liner",
@@ -98,7 +103,7 @@ function App() {
                 "https://nw-demo-app-2.herokuapp.com/p6"
               )}
             </div>
-          </Carousel>
+          </Carousel> */}
         </div>
       </header>
     </div>
