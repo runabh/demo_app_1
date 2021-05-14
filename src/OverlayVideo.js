@@ -1,5 +1,5 @@
 import porfilepic from "./profile.png";
-import video from "./1-Favorite-Things-Emily-V16.mov";
+// import video from "./1-Favorite-Things-Emily-V16.mov";
 import Overlay from "react-overlays/Overlay";
 import { useState, useRef, useEffect } from "react";
 import "./style.css";
