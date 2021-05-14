@@ -177,20 +177,7 @@ const OverlayVideo = (props) => {
     views: "43.4K",
     likes: "25.6K",
   };
-  const videoJsOptions = {
-    autoplay: true,
-    controls: true,
-    sources: [
-      {
-        src: video,
-        type: "video/mp4",
-      },
-    ],
-    onTimeUpdate: (currentTime) => {
-      setCurrentPlayerTime(Math.floor(currentTime));
-      checkIfShouldRotate(currentTime);
-    },
-  };
+
   return (
     <div>
       <div className="video-container">
