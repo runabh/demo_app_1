@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.less";
 import { Carousel, Button } from "antd";
 import OverlayVideo from "./OverlayVideo";
+import OverlayVideoVideojs from "./OverlayVideoVideojs";
 
 function App() {
   const onChange = (a, b, c) => {
@@ -58,8 +59,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{ maxWidth: "80vw", margin: "auto" }}>
+        <div>
+          <br /> <br /> <br />
+          Native HTML5 Video Player
           <OverlayVideo />
+          <br /> <br /> <br />
+          Video JS Player
+          <OverlayVideoVideojs />
+          <br /> <br /> <br />
           {/* <Carousel afterChange={onChange} {...settings}>
             <div>
               {product(

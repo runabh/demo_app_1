@@ -182,7 +182,7 @@ const OverlayVideo = (props) => {
     controls: true,
     sources: [
       {
-        src: video,
+        src: "https://nowwith-talent-poc.s3.amazonaws.com/1-Favorite-Things-Emily-V16.mov",
         type: "video/mp4",
       },
     ],
@@ -194,7 +194,7 @@ const OverlayVideo = (props) => {
   return (
     <div>
       <div className="video-container">
-        <video
+        {/* <video
           ref={target}
           controls
           autoplay
@@ -206,13 +206,9 @@ const OverlayVideo = (props) => {
             console.log(Math.floor(e.target.duration));
           }}
         >
-          <source
-            src={
-              "https://nowwith-talent-poc.s3.amazonaws.com/1-Favorite-Things-Emily-V16.mov"
-            }
-            type="video/mp4"
-          />
-        </video>
+          <source src={video} type="video/mp4" />
+        </video> */}
+        <VideoPlayer {...videoJsOptions} />
         <div className="interaction">
           <div className="interaction-layer-top">
             <div className="video-details">

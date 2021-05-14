@@ -1,0 +1,143 @@
+.video-container {
+  width: 80vw;
+  height: 45vw;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .interaction {
+  z-index: 10;
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  height: calc(100% - 64px);
+  width: 100%;
+  float: right;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: flex-end;
+}
+.video-container .interaction h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.interaction h2:hover {
+  background-color: #ffffff50;
+  cursor: pointer;
+}
+
+.card-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: end;
+  justify-items: flex-end;
+  grid-gap: 8px;
+  margin-bottom: 16px;
+}
+
+.image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.image-active img {
+  height: 70px;
+  width: 70px;
+}
+
+.image-active {
+  animation: border 0.4s ease 1 forwards;
+}
+
+.details {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px;
+  text-align: right;
+}
+.action {
+  padding: 16px;
+}
+
+.name {
+  font-weight: 700;
+}
+.type {
+  font-size: 12px;
+}
+.price {
+  font-weight: 800;
+}
+
+.video-details {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-gap: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  margin: 16px;
+}
+
+.video-details img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.creator-details {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.creator-details div {
+  margin: 4px 0;
+}
+.creator-details span {
+  margin: 0px 16px 0 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50px 200px 80px;
+  background-color: #00000050;
+  border-radius: 40px;
+  align-items: center;
+  margin: 16px auto;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  margin: 16px auto;
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
