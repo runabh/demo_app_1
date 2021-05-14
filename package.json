@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.15.1",
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "craco-less": "^1.17.1",
     "craco-styled-jsx": "^1.0.1",
     "express": "^4.17.1",
