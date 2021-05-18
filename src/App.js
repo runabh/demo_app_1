@@ -3,6 +3,7 @@ import "./App.less";
 import { Carousel, Button } from "antd";
 import OverlayVideo from "./OverlayVideo";
 import OverlayVideoVideojs from "./OverlayVideoVideojs";
+import OverlayVideoJW from "./OverlayVideoJW";
 
 function App() {
   const onChange = (a, b, c) => {
@@ -66,6 +67,9 @@ function App() {
           <br /> <br /> <br />
           Video JS Player
           <OverlayVideoVideojs />
+          <br /> <br /> <br />
+          JW Player
+          <OverlayVideoJW />
           <br /> <br /> <br />
           {/* <Carousel afterChange={onChange} {...settings}>
             <div>

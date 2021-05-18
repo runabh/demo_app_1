@@ -6,7 +6,8 @@
 
 .videoLayer,
 .video-js,
-video {
+video,
+#my-unique-id {
   width: 100% !important;
   height: 100% !important;
   position: absolute !important;
@@ -28,6 +29,19 @@ video {
   text-align: left;
   padding: 10px;
   height: calc(100% - 64px);
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: space-between;
+  /* align-items: flex-end; */
+}
+
+.video-container .interaction-jw {
+  z-index: 10;
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  height: calc(100% - 104px);
   width: 100%;
   display: grid;
   grid-template-rows: auto;
